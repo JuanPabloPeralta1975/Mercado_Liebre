@@ -6,7 +6,7 @@ app.use(express.static('public'));
 const publicPath = path.resolve(__dirname,'. /public');
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Mercado Liebre Corriendo');
 });
 
